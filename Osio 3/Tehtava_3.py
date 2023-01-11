@@ -1,4 +1,4 @@
-suk = input("Anna sukupuoli muodossa 'Nainen' tai 'Mies': ")
+suk = input("Anna biologinen sukupuoli muodossa 'Nainen' tai 'Mies': ")
 hemo = float(input('Anna hemoglobiiniarvo muodossa g/l: '))
 
 if suk.casefold() == "mies":
