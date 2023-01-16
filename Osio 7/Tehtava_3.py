@@ -14,10 +14,6 @@ while cmd != "Lopeta":
     elif cmd == "Hae":
         koodi = input("Anna lentokentän ICAO-koodi: ")
         print(f"Koodia vastaava lentokenttä on: {db[koodi]}")
-        # print("Haku")
-    # elif cmd == "Lopeta":  # tällä hetkellä taitaa olla turha mut antaa nyt olla
-    #     print("Heippa!")
-    #     break
     else:
         print("Komentoa ei tunnistettu, yritä uudelleen.")
     cmd = input("Anna komento: ")
