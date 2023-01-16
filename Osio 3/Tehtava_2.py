@@ -14,4 +14,4 @@ elif luokka == 'LUX':
     print('LUX on parvekkeellinen hytti yläkannella.')
 
 else:
-    print('Virheellinen hyttiluokka. Yritä uudelleen')
+    print('Virheellinen hyttiluokka.')
