@@ -8,7 +8,6 @@ def get_types(koodi):
     return tulos
 
 def typecounter(tyypit):
-    tyypit
 
     tyyppiset = set()
     tyyppilista = []
