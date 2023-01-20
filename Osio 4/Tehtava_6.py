@@ -14,5 +14,5 @@ while N < itr:                  #Koska 1/4 ympyrän suhde 1/4 neliöön on sama 
 
 
 
-print(f"Piin likiarvoksi laskettiin {N} iteraation jälkeen {(4*n)/N:6.6f}")
+print(f"Piin likiarvoksi laskettiin {N} iteraation jälkeen {(4*n)/itr:6.6f}")
 
