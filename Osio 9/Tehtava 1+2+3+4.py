@@ -33,6 +33,9 @@ print(auto1)
 auto1.kiihdyta(30)
 auto1.kiihdyta(70)
 auto1.kiihdyta(50)
+
+print(auto1)
+
 auto1.kiihdyta(-200)
 
 print(auto1)
