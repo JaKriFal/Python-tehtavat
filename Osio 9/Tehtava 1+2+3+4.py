@@ -74,3 +74,7 @@ for n in autot:
     print(f"{n.rekisteritunnus:6s}   {n.huippunopeus:6.1f}km/h   {n.nopeus:6.1f}km/h   {n.matka:6.1f}km")
 
 print(f"Voittaja: {vrekkari:6s} ")
+
+# Ohjelma ilmoittaa voittajan. Voittaja on tässä ohjelmassa se auto joka
+# voittokierroksella lopettaa pisimmällä. Olisi myös mahdollista laskea ja verrata tarkkoja ylitysaikoja mutta
+# se menee mielestäni yli tehtävänannon
