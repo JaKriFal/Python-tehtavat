@@ -71,7 +71,7 @@ for n in autot:
         vmatka = n.matka
         vrekkari = n.rekisteritunnus
 
-print("Tunnus    " + "Huippunopeus    " + "Nopeus    " + "Kuljettu matka")
+print("Tunnus    " + "Huippunopeus  " + "Nopeus     " + "Kuljettu matka")
 
 for n in autot:
     print(f"{n.rekisteritunnus:6s}   {n.huippunopeus:6.1f}km/h   {n.nopeus:6.1f}km/h   {n.matka:6.1f}km")
