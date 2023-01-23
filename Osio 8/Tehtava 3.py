@@ -18,10 +18,7 @@ yhteys = mariadb.connect(
 )
 
 
-maat = []
-
-maat.append(input("Anna ensimmäisen kentän ICAO-koodi: "))
-maat.append(input("Anna toisen kentän ICAO-koodi: "))
+maat = [input("Anna ensimmäisen kentän ICAO-koodi: "), input("Anna toisen kentän ICAO-koodi: ")]
 
 koordinaatit = []
 
