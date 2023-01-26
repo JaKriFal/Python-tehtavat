@@ -35,12 +35,42 @@ class Kilpailu:
             n.kulje(1.0)
 
     def tulosta_tilanne(self):
-        for n in self.autot:
-            print(f"{n.rekisteritunnus:6s}   {n.huippunopeus:6.1f}km/h   {n.nopeus:6.1f}km/h   {n.matka:6.1f}km")
+        for a in self.autot:
+            print(f"{a.rekisteritunnus:6s}   {a.huippunopeus:6.1f}km/h   {a.nopeus:6.1f}km/h   {a.matka:6.1f}km")
 
     def kilpailu_ohi(self):
         for n in self.autot:
             if n.matka >= self.pituus:
                 return True
         return False
+
+
+autot = []
+n = 0
+
+while n < 10:
+    rekkari = "ABC-" + str(n + 1)
+    hp = float(random.randint(100, 200))
+    autot.append(Auto(rekkari, hp))
+    n += 1
+
+ralli = Kilpailu("Suuri romuralli", 8000, autot)
+
+fflag = ralli.kilpailu_ohi()
+i = 1
+
+while not ralli.kilpailu_ohi():
+    ralli.tunti_kuluu()
+    if i%10 == 0:
+        print(f"Kierros: {i}")
+        ralli.tulosta_tilanne()
+    i += 1
+
+
+print(f"VOITTAJA! Kilpailu päättyi kierroksella {i}")
+ralli.tulosta_tilanne()
+
+
+
+
 
